@@ -5,16 +5,16 @@
 
 **INTRODUCTION**
 ---
-This repository is dedicated to practicing and learning MATLAB App Designer development.  
-Here, you can deepen your understanding of MATLAB GUI principles through hands-on app design and interactive interface development.
+This repository is dedicated to practicing and understanding **MATLAB classes**.  
+Here, you can explore the concepts of object-oriented programming in MATLAB, including creating classes, defining properties and methods, and using instances to interact with your objects.
 
 This repository is suitable for:
-- Beginners who want to learn MATLAB App Designer layout and control usage
-- Practicing operations of controls such as buttons, labels, edit fields, dropdowns, etc.
-- Implementing interactive functionalities, like updating label values, plotting, and responding to user input
-- Serving as a reference for daily practice and review
+- Beginners who want to learn how to define and use classes in MATLAB
+- Understanding properties, methods, and access modifiers
+- Practicing object-oriented design patterns and class-based functionality
+- Serving as a reference for exercises and hands-on learning
 
-Start exploring and let's master MATLAB App design and development together!
+Start exploring and deepen your understanding of MATLAB object-oriented programming!
 
 **LICENCE**
 ---
@@ -27,8 +27,8 @@ Create a folder on your computer for your MATLAB project. This folder will serve
 2. **Initialize a local repository**  
 Run the command `repo = gitinit("repoName")` in MATLAB to initialize a local repository. You can check the repository status using `status(repo)`.
 3. **Add new files**  
-For any new files in your project, click **Add to Source Control**. Then commit your changes using appropriate commit messages.
-4.**Complete the first submission**
+For any new files in your project, click **Add to Source Control**. Then commit your changes using appropriate commit messages.  
+4. **Complete the first submission**
 Complete the first submission by filling in the required information before sharing the repository.
 5. **Share to GitHub**  
 In MATLAB, go to the **Source Control** tab and click **Share to GitHub**. Follow the prompts to create a corresponding repository on GitHub.
@@ -36,6 +36,8 @@ In MATLAB, go to the **Source Control** tab and click **Share to GitHub**. Follo
 Click **Push** to upload your local commits to the GitHub repository.
 7. **Authenticate**  
 Enter your GitHub username and password, or use a Personal Access Token (PAT) for authentication.
+8. **Upstream branch**  
+If your local main branch is **NOT** linked to a remote branch, run the command `!git branch --set-upstream-to=origin/main main` to set `origin/main` as its upstream branch.
 
 **INTEGRATING PYTHON WITH MATLAB**
 ---
