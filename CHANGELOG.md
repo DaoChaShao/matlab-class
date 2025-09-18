@@ -2,6 +2,8 @@
 
 #### FEAT
 
+* 7c78f3f - feat: add a main file (DaoChaShao, 2025-09-18)
+* 9ed8409 - feat: add a class (DaoChaShao, 2025-09-18)
 * 8171f58 - feat: update the file of Chinese readme (DaoChaShao, 2025-09-18)
 * b3c009f - feat: add a changelog file (DaoChaShao, 2025-09-18)
 * a0cc2c2 - feat: add a Chinese readme file (DaoChaShao, 2025-09-18)
@@ -10,6 +12,7 @@
 
 #### DOCS
 
+* a7c62ab - docs: update the changelog file (DaoChaShao, 2025-09-18)
 * 8e9c9b5 - docs: update the file of English readme file (DaoChaShao, 2025-09-18)
 
 #### OTHER
