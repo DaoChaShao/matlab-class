@@ -7,34 +7,45 @@
 % Code Ver.   : 0.1.0
 % Desc        : 
 
-classdef Student
+classdef Student < Person
     properties (Access = private)
-        Name string
-        Gender string
-        Age double
+        Chinese double
+        Math double
+        English double
     end
 
     methods (Access = public)
-        function obj = Student(name, gender, age)
-            obj.Name = string(name);
-            obj.Gender = string(gender);
-            obj.Age = double(age);
+        function obj = Student(name, gender, age, chinese, math, english)
+            obj@Person (name, gender, age)
+
+            obj.Chinese = double(chinese);
+            obj.Math = double(math);
+            obj.English = double(english);
         end
     
-        function name = getName(obj)
-            name = obj.Name;
+        function n = getName(obj)
+            n = getName@Person(obj);
         end
 
-        function gender = getGender(obj)
-            gender = obj.Gender;
+        function g = getGender(obj)
+            g = getGender@Person(obj);
         end
-        
-        function age = getAge(obj)
-            age = obj.Age;
+
+        function a = getAge(obj)
+            a = getAge@Person(obj);
         end
 
         function show(obj)
-            fprintf('Name: %s\nGender: %s\nAge: %.1f\n', obj.Name, obj.Gender, obj.Age);
+            name = getName(obj);
+            gender = getGender(obj);
+            age = getAge(obj);
+            fprintf("Name: %s\nGender: %s\nAge: %.1f\nChinese: %.2f\nMath: %.2f\nEnglish: %.2f\n", name, gender, age, obj.Chinese, obj.Math, obj.English);
+        end
+    end
+
+    methods
+        function greet(obj)
+            fprintf('Hello, my name is %s.\n', obj.getName());
         end
     end
 end
