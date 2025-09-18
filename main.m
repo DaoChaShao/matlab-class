@@ -9,8 +9,18 @@
 
 addpath("src");
 
-sTom = Student("Tom", "Male", 20);
-sJerry = Student("Jerry", "Female", 18);
+cTom = randi(100);
+mTom = randi(100);
+eTom = randi(100);
+sTom = Student("Tom", "Male", 20, cTom, mTom, eTom);
+ 
+cJerry = randi(100);
+mJerry = randi(100);
+eJerry = randi(100);
+sJerry = Student("Jerry", "Female", 18, cJerry, mJerry, eJerry);
 
 sTom.show
-disp(sTom.getName())
+sJerry.show
+
+sTom.greet
+sJerry.greet
